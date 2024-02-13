@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #7F7FD5;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#tasks-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* tasks form */
+
+#tasks-header {
+    margin-top: 40px;
+}
+
+#add-task-form {
+    position: relative;
+}
+
+#add-task-form input {
+    box-sizing: border-box;
+    border: 1px solid #5d5dae;
+    background: #fff;
+    color: #5d5dae;
+    vertical-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+}
+
+#add-task-form input::placeholder {
+    color: #5d5dae;
+}
+
+#add-task-form input:focus {
+    outline: 2px solid #5d5dae;
+}
+
+#add-btn {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #5d5dae;
+    cursor: pointer;
+    transition: .3s;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+
+#add-btn:hover {
+    background: #5d5dae;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+/* tasks container */
+
+#task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li {
+    text-align: left;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    border-bottom: 4px solid #5d5dae;
+    background: #fff;
+    color: #5d5dae;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+#task-list li span {
+    font-size: 18px;
+}
+
+#task-list ion-icon {
+    position: absolute;
+    top: 0;
+    height: 38px;
+    transition: .3s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done-btn {
+    right: 40px;
+}
+
+.done-btn:hover {
+    color: #fff;
+    background: #09e01b;
+}
+
+.remove-btn {
+    right: 0;
+}
+
+.remove-btn:hover {
+    color: #fff;
+    background: #eb0927;
+}
+
+.hide {
+    display: none;
+}
+
+#task-list li.done {
+    background: #5d5dae;
+    color: #fff;
+    text-decoration: line-through;
+}
